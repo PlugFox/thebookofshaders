@@ -14,7 +14,7 @@ This is a gentle step-by-step guide through the abstract and complex universe of
 
 ```bash
 docker build -t plugfox/the-book-of-shaders -f Dockerfile .
-docker run -it --rm -v .:/build plugfox/the-book-of-shaders bash -c "cd /build && python3 src/parseBook.py -f epub"
+docker run -it --rm --name The-Book-Of-Shaders -v .:/build plugfox/the-book-of-shaders bash -c "cd /build && python3 src/parseBook.py -f epub"
 ```
 
 ## Contents
