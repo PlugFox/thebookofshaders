@@ -1,7 +1,8 @@
 <canvas id="custom" class="canvas" data-fragment-url="src/moon/moon.frag" data-textures="src/moon/moon.jpg" width="350px" height="350px"></canvas>
 
 # The Book of Shaders
-*by [Patricio Gonzalez Vivo](http://patriciogonzalezvivo.com/) and [Jen Lowe](http://jenlowe.net/)*
+
+_by [Patricio Gonzalez Vivo](http://patriciogonzalezvivo.com/) and [Jen Lowe](http://jenlowe.net/)_
 
 This is a gentle step-by-step guide through the abstract and complex universe of Fragment Shaders.
 
@@ -9,62 +10,76 @@ This is a gentle step-by-step guide through the abstract and complex universe of
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=B5FSVSHGEATCG" style="float: right;"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt=""></a>
 </div>
 
+## How to build EPUB
+
+```bash
+docker build -t plugfox/the-book-of-shaders -f Dockerfile .
+docker run -it --rm -v .:/build plugfox/the-book-of-shaders bash -c "cd /build && python3 src/parseBook.py -f epub"
+```
+
 ## Contents
 
-* [About this book](00/)
+-   [About this book](00/)
 
-* Getting started
-    * [What is a shader?](01/)
-    * [“Hello world!”](02/)
-    * [Uniforms](03/)
-	* [Running your shader](04/)
+-   Getting started
 
-* Algorithmic drawing
-    * [Shaping functions](05/)
-    * [Colors](06/)
-    * [Shapes](07/)
-    * [Matrices](08/)
-    * [Patterns](09/)
+    -   [What is a shader?](01/)
+    -   [“Hello world!”](02/)
+    -   [Uniforms](03/)
+    -   [Running your shader](04/)
 
-* Generative designs
-    * [Random](10/)
-    * [Noise](11/)
-    * [Cellular noise](12/)
-    * [Fractional brownian motion](13/)
-    * Fractals
+-   Algorithmic drawing
 
-* Image processing
-    * Textures
-    * Image operations
-    * Kernel convolutions
-    * Filters
-    * Others effects
+    -   [Shaping functions](05/)
+    -   [Colors](06/)
+    -   [Shapes](07/)
+    -   [Matrices](08/)
+    -   [Patterns](09/)
 
-* Simulation
-    * Pingpong
-    * Conway
-    * Ripples
-    * Water color
-    * Reaction diffusion
+-   Generative designs
 
-* 3D graphics
-    * Lights
-    * Normal-maps
-    * Bump-maps
-    * Ray marching
-    * Environmental-maps (spherical and cube)
-    * Reflect and refract
+    -   [Random](10/)
+    -   [Noise](11/)
+    -   [Cellular noise](12/)
+    -   [Fractional brownian motion](13/)
+    -   Fractals
 
-* [Appendix:](appendix/) Other ways to use this book
-	* [How can I navigate this book offline?](appendix/00/)
-	* [How to run the examples on a Raspberry Pi?](appendix/01/)
-	* [How to print this book?](appendix/02/)
-    * [How can I collaborate?](appendix/03/)
-    * [An introduction for those coming from JS](appendix/04/) by [Nicolas Barradeau](http://www.barradeau.com/)
+-   Image processing
 
-* [Examples Gallery](examples/)
+    -   Textures
+    -   Image operations
+    -   Kernel convolutions
+    -   Filters
+    -   Others effects
 
-* [Glossary](glossary/)
+-   Simulation
+
+    -   Pingpong
+    -   Conway
+    -   Ripples
+    -   Water color
+    -   Reaction diffusion
+
+-   3D graphics
+
+    -   Lights
+    -   Normal-maps
+    -   Bump-maps
+    -   Ray marching
+    -   Environmental-maps (spherical and cube)
+    -   Reflect and refract
+
+-   [Appendix:](appendix/) Other ways to use this book
+
+    -   [How can I navigate this book offline?](appendix/00/)
+    -   [How to run the examples on a Raspberry Pi?](appendix/01/)
+    -   [How to print this book?](appendix/02/)
+        -   [How can I collaborate?](appendix/03/)
+        -   [An introduction for those coming from JS](appendix/04/) by [Nicolas Barradeau](http://www.barradeau.com/)
+
+-   [Examples Gallery](examples/)
+
+-   [Glossary](glossary/)
 
 ## About the Authors
 
